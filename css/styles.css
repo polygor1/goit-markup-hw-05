@@ -83,6 +83,12 @@ ul {
   padding-right: 15px;
   margin: 0 auto;
 }
+.touch-transform {
+  transition-property: color, fill, background-color, border, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
 .current {
   display: flex;
   flex-direction: column;
@@ -94,16 +100,14 @@ ul {
   height: 4px;
   border-radius: 2px;
   background: var(--touch-color);
-  /* bottom: -1px; */
   margin-top: 43px;
 }
-.nav-list .nav-list-item:nth-child(1) .current::after{
+.nav-list .nav-list-item:nth-child(1) .current::after {
   width: 48px;
 }
-.nav-list .nav-list-item:nth-child(2) .current::after{
+.nav-list .nav-list-item:nth-child(2) .current::after {
   width: 78px;
 }
-
 
 /* ---HEADER--- */
 

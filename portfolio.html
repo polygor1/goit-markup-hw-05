@@ -1,212 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Портфолио</title>
-  <link rel="stylesheet" href="./css/modern-normalize.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="./css/styles.css">
-</head>
-
-<body>
-  <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <!-- Logotype -->
-      <a class="logo" href="./index.html">
-        <span class="logoweb">Web</span>Studio
-      </a>
-      <!-- Navigation -->
-      <nav class="navigation">
-        <ul class="nav-list">
-          <li class="nav-list-item">
-            <a class="nav-list-str " href="./index.html">Студия</a>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <!-- Logotype -->
+        <a class="logo" href="./index.html">
+          <span class="logoweb">Web</span>Studio
+        </a>
+        <!-- Navigation -->
+        <nav class="navigation">
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a class="nav-list-str touch-transform" href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="nav-list-item">
+              <a
+                class="nav-list-str touch-transform current"
+                href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-str touch-transform" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- e-Adress -->
+        <div class="eadress container">
+          <a class="eadr-mail touch-transform" href="mailto:info@devstudio.com">
+            <svg class="eadr-ico touch-transform" width="16" height="12">
+              <use href="./images/icons.svg#icon-envelope"></use>
+            </svg>
+            info@devstudio.com
+          </a>
+          <a class="eadr-tel touch-transform" href="tel:+380961111111">
+            <svg class="eadr-ico touch-transform" width="10" height="16">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>
+            +38 096 111 11 11
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- Main content -->
+    <main class="main">
+      <section class="section">
+        <div class="container">
+          <h2>Searsh Bar</h2>
+          <!-- Searsh Bar -->
+          <div>
+            <ul class="bar-buttons">
+              <li>
+                <button class="srsh-btn touch-transform" type="button">
+                  Всё
+                </button>
+              </li>
+              <li>
+                <button class="srsh-btn touch-transform" type="button">
+                  Веб-сайты
+                </button>
+              </li>
+              <li>
+                <button class="srsh-btn touch-transform" type="button">
+                  Приложения
+                </button>
+              </li>
+              <li>
+                <button class="srsh-btn touch-transform" type="button">
+                  Дизайн
+                </button>
+              </li>
+              <li>
+                <button class="srsh-btn touch-transform" type="button">
+                  Маркетинг
+                </button>
+              </li>
+            </ul>
+          </div>
+          <!-- Portfolio -->
+          <div class="portfolio">
+            <h2>Портфолио</h2>
+            <ul class="portfolio-list">
+              <li class="portfolio-card touch-transform">
+                <img
+                  src="./images/pfimg1q.jpg"
+                  alt="Технокряк"
+                  width="370"
+                  height="294"
+                />
+                <div class="portfolio-text">
+                  <h3>Технокряк</h3>
+                  <p>Веб-сайт</p>
+                </div>
+              </li>
+              <li class="portfolio-card touch-transform">
+                <img
+                  src="./images/pfimg2q.jpg"
+                  alt="Постер New Orlean vs Golden Star"
+                  width="370"
+                  height="294"
+                />
+                <div class="portfolio-text">
+                  <h3>Постер New Orlean vs Golden Star</h3>
+                  <p>Дизайн</p>
+                </div>
+              </li>
+              <li class="portfolio-card touch-transform">
+                <img
+                  src="./images/pfimg3q.jpg"
+                  alt="Ресторан Seafood"
+                  width="370"
+                  height="294"
+                />
+                <div class="portfolio-text">
+                  <h3>Ресторан Seafood</h3>
+                  <p>Приложение</p>
+                </div>
+              </li>
+              <li class="portfolio-card touch-transform">
+                <img
+                  src="./images/pfimg4q.jpg"
+                  alt="Проект Prime"
+                  width="370"
+                  height="294"
+                />
+                <div class="portfolio-text">
+                  <h3>Проект Prime</h3>
+                  <p>Маркетинг</p>
+                </div>
+              </li>
+              <li class="portfolio-card touch-transform">
+                <img
+                  src="./images/pfimg5q.jpg"
+                  alt="Проект Boxes"
+                  width="370"
+                  height="294"
+                />
+                <div class="portfolio-text">
+                  <h3>Проект Boxes</h3>
+                  <p>Приложение</p>
+                </div>
+              </li>
+              <li class="portfolio-card touch-transform">
+                <img
+                  src="./images/pfimg6q.jpg"
+                  alt="Inspiration has no Borders"
+                  width="370"
+                  height="294"
+                />
+                <div class="portfolio-text">
+                  <h3>Inspiration has no Borders</h3>
+                  <p>Веб-сайт</p>
+                </div>
+              </li>
+              <li class="portfolio-card touch-transform">
+                <img
+                  src="./images/pfimg7q.jpg"
+                  alt="Издание Limited Edition"
+                  width="370"
+                  height="294"
+                />
+                <div class="portfolio-text">
+                  <h3>Издание Limited Edition</h3>
+                  <p>Дизайн</p>
+                </div>
+              </li>
+              <li class="portfolio-card touch-transform">
+                <img
+                  src="./images/pfimg8q.jpg"
+                  alt="Проект LAB"
+                  width="370"
+                  height="294"
+                />
+                <div class="portfolio-text">
+                  <h3>Проект LAB</h3>
+                  <p>Маркетинг</p>
+                </div>
+              </li>
+              <li class="portfolio-card touch-transform">
+                <img
+                  src="./images/pfimg9q.jpg"
+                  alt="Growing Business"
+                  width="370"
+                  height="294"
+                />
+                <div class="portfolio-text">
+                  <h3>Growing Business</h3>
+                  <p>Приложение</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer-list">
+          <li class="footer-one">
+            <!-- Logotype -->
+            <a href="#" class="logo">
+              <span class="logoweb">Web</span>Studio
+            </a>
+            <address class="address">
+              <p>г. Киев, пр-т Леси Украинки, 26</p>
+              <div class="footer-one-eaddr">
+                <a href="mailto:info@example.com">info@example.com</a>
+                <a href="tel:+380991111111">+38 099 111 11 11</a>
+              </div>
+            </address>
           </li>
-          <li class="nav-list-item">
-            <a class="nav-list-str current" href="./portfolio.html">Портфолио</a>
+          <li class="join">
+            <h3 class="join-text">Присоединяйтесь</h3>
+            <!-- icon list -->
+            <ul class="icons-socnet-list">
+              <li>
+                <a href="#" class="socnet touch-transform">
+                  <svg
+                    class="icon-socnet touch-transform"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="socnet touch-transform">
+                  <svg
+                    class="icon-socnet touch-transform"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="socnet touch-transform">
+                  <svg
+                    class="icon-socnet touch-transform"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="socnet touch-transform">
+                  <svg
+                    class="icon-socnet touch-transform"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <!-- end icon list -->
           </li>
-          <li class="nav-list-item">
-            <a class="nav-list-str" href="">Контакты</a>
+          <li class="subscribe">
+            <!-- subscribe -->
           </li>
         </ul>
-      </nav>
-      <!-- e-Adress -->
-      <div class="eadress container">
-        <a class="eadr-mail" href="mailto:info@devstudio.com">
-          <svg class="eadr-ico" width="16" height="12">
-            <use href="./images/icons.svg#icon-envelope"></use>
-          </svg>
-          info@devstudio.com
-        </a>
-        <a class="eadr-tel" href="tel:+380961111111">
-          <svg class="eadr-ico" width="10" height="16">
-            <use href="./images/icons.svg#icon-smartphone"></use>
-          </svg>
-          +38 096 111 11 11
-        </a>
       </div>
-    </div>
-  </header>
-  <!-- Main content -->
-  <main class="main">
-    <section class="section">
-      <div class="container">
-        <h2>Searsh Bar</h2>
-        <!-- Searsh Bar -->
-        <div>
-          <ul class="bar-buttons">
-            <li>
-              <button class="srsh-btn" type="button">Всё</button>
-            </li>
-            <li>
-              <button class="srsh-btn" type="button">Веб-сайты</button>
-            </li>
-            <li>
-              <button class="srsh-btn" type="button">Приложения</button>
-            </li>
-            <li>
-              <button class="srsh-btn" type="button">Дизайн</button>
-            </li>
-            <li>
-              <button class="srsh-btn" type="button">Маркетинг</button>
-            </li>
-          </ul>
-        </div>
-        <!-- Portfolio -->
-        <div class="portfolio">
-          <h2>Портфолио</h2>
-          <ul class="portfolio-list">
-            <li class="portfolio-card">
-              <img src="./images/pfimg1q.jpg" alt="Технокряк" width=370 height=294>
-              <div class="portfolio-text">
-                <h3>Технокряк</h3>
-                <p>Веб-сайт</p>
-              </div>
-            </li>
-            <li class="portfolio-card">
-              <img src="./images/pfimg2q.jpg" alt="Постер New Orlean vs Golden Star" width=370 height=294>
-              <div class="portfolio-text">
-                <h3>Постер New Orlean vs Golden Star</h3>
-                <p>Дизайн</p>
-              </div>
-            </li>
-            <li class="portfolio-card">
-              <img src="./images/pfimg3q.jpg" alt="Ресторан Seafood" width=370 height=294>
-              <div class="portfolio-text">
-                <h3>Ресторан Seafood</h3>
-                <p>Приложение</p>
-              </div>
-            </li>
-            <li class="portfolio-card">
-              <img src="./images/pfimg4q.jpg" alt="Проект Prime" width=370 height=294>
-              <div class="portfolio-text">
-                <h3>Проект Prime</h3>
-                <p>Маркетинг</p>
-              </div>
-            </li>
-            <li class="portfolio-card">
-              <img src="./images/pfimg5q.jpg" alt="Проект Boxes" width=370 height=294>
-              <div class="portfolio-text">
-                <h3>Проект Boxes</h3>
-                <p>Приложение</p>
-              </div>
-            </li>
-            <li class="portfolio-card">
-              <img src="./images/pfimg6q.jpg" alt="Inspiration has no Borders" width=370 height=294>
-              <div class="portfolio-text">
-                <h3>Inspiration has no Borders</h3>
-                <p>Веб-сайт</p>
-              </div>
-            </li>
-            <li class="portfolio-card">
-              <img src="./images/pfimg7q.jpg" alt="Издание Limited Edition" width=370 height=294>
-              <div class="portfolio-text">
-                <h3>Издание Limited Edition</h3>
-                <p>Дизайн</p>
-              </div>
-            </li>
-            <li class="portfolio-card">
-              <img src="./images/pfimg8q.jpg" alt="Проект LAB" width=370 height=294>
-              <div class="portfolio-text">
-                <h3>Проект LAB</h3>
-                <p>Маркетинг</p>
-              </div>
-            </li>
-            <li class="portfolio-card">
-              <img src="./images/pfimg9q.jpg" alt="Growing Business" width=370 height=294>
-              <div class="portfolio-text">
-                <h3>Growing Business</h3>
-                <p>Приложение</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-  </main>
-  <!-- footer -->
-  <footer class="footer">
-    <div class="container">
-      <ul class="footer-list">
-        <li class="footer-one">
-          <!-- Logotype -->
-          <a href="#" class="logo">
-            <span class="logoweb">Web</span>Studio
-          </a>
-          <address class="address">
-            <p>г. Киев, пр-т Леси Украинки, 26</p>
-            <div class="footer-one-eaddr">
-              <a href="mailto:info@example.com">info@example.com</a>
-              <a href="tel:+380991111111">+38 099 111 11 11</a>
-            </div>
-          </address>
-        </li>
-        <li class="join">
-          <h3 class="join-text">Присоединяйтесь</h3>
-          <!-- icon list -->
-          <ul class="icons-socnet-list">
-            <li>
-              <a href="#" class="socnet">
-                <svg class="icon-socnet" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="socnet">
-                <svg class="icon-socnet" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="socnet">
-                <svg class="icon-socnet" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="socnet">
-                <svg class="icon-socnet" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <!-- end icon list -->
-        </li>
-        <li class="subscribe">
-          <!-- subscribe -->
-        </li>
-      </ul>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
