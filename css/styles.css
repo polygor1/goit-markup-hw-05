@@ -605,7 +605,7 @@ ul {
     1px 4px 6px #00000029;
 }
 .portfolio-card:hover .prtf-card-slide {
-  transform: translateY(-294px);
+  transform: translateY(-100%);
 }
 .portfolio-card:nth-child(-n + 3) {
   margin-top: 0px;
