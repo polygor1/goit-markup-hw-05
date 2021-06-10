@@ -89,7 +89,6 @@ ul {
     opacity, transform;
   transition-duration: 1250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
 }
 .current {
   display: flex;
@@ -493,7 +492,7 @@ ul {
   fill: var(--ico-ligt-accent-color);
 }
 
-/* --- Modal window */
+/* --- Modal window --- */
 
 .backdrop {
   position: fixed;
@@ -501,12 +500,13 @@ ul {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #00000033;
 }
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
+
 .modal {
   display: flex;
   position: absolute;
@@ -517,12 +517,13 @@ ul {
   width: 528px;
   height: 581px;
   background: var(--face-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px #0000001f, 0px 1px 1px #00000024,
+    0px 2px 1px #00000033;
   border-radius: 4px;
 }
 .cls-button {
   position: absolute;
+  cursor: pointer;
   top: 8px;
   right: 8px;
   width: 30px;
@@ -532,8 +533,12 @@ ul {
   border: 1px solid #0000001a;
   box-sizing: border-box;
 }
+.cls-button:hover .icon-window,
+.cls-button:focus .icon-window {
+  fill: var(--touch-color);
+}
 .icon-window {
-  color: var(--title-color);
+  fill: var(--logo-dark);
 }
 
 /* === PORTFOLIO === */
@@ -625,7 +630,6 @@ ul {
   top: 294px;
   padding: 0 24px;
   background: var(--background-prtf-card-slide-color);
-
   transform: translateY(0);
 }
 
