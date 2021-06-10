@@ -26,6 +26,7 @@
   --background-footer-color: #2f303a;
   --background-team-color: #f5f4fa;
   --background-footer-icon-color: #ffffff1a;
+  --background-prtf-card-slide-color: #2196f3e6;
 }
 
 * {
@@ -84,8 +85,9 @@ ul {
   margin: 0 auto;
 }
 .touch-transform {
-  transition-property: color, fill, background-color, border, box-shadow;
-  transition-duration: 250ms;
+  transition-property: color, fill, background-color, border, box-shadow,
+    opacity, transform;
+  transition-duration: 1250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
 }
@@ -296,7 +298,6 @@ ul {
   position: relative;
   overflow: hidden;
 }
-
 .inside-card-text {
   display: flex;
   width: 100%;
@@ -491,6 +492,7 @@ ul {
   background-color: var(--ico-accent-color);
   fill: var(--ico-ligt-accent-color);
 }
+
 /* --- Modal window */
 
 .backdrop {
@@ -526,7 +528,7 @@ ul {
   height: 30px;
   border-radius: 50%;
   background: var(--page-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid #0000001a;
   box-sizing: border-box;
 }
 .icon-window {
@@ -587,6 +589,7 @@ ul {
 }
 .portfolio-card {
   display: flex;
+  position: relative;
   flex-flow: column;
   margin-top: 30px;
   margin-right: 30px;
@@ -595,12 +598,46 @@ ul {
   box-shadow: 0px 1px 1px #0000001f, 0px 4px 4px #0000000f,
     1px 4px 6px #00000029;
 }
+.portfolio-card:hover .prtf-card-slide {
+  transform: translateY(-294px);
+}
 .portfolio-card:nth-child(-n + 3) {
   margin-top: 0px;
 }
 .portfolio-card:nth-child(3n) {
   margin-right: 0px;
 }
+.prtf-card-window {
+  display: flex;
+  position: absolute;
+  width: 370px;
+  height: 294px;
+  overflow: hidden;
+}
+.prtf-card-slide {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  height: 294px;
+  top: 294px;
+  padding: 0 24px;
+  background: var(--background-prtf-card-slide-color);
+
+  transform: translateY(0);
+}
+
+.prtf-card-slide-text {
+  text-align: left;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.556;
+  letter-spacing: 0.03em;
+  color: var(--face-color);
+}
+
 .portfolio-text {
   padding: 20px 24px 19px;
   border-left: 1px solid var(--prtf-border-color);
