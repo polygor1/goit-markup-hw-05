@@ -522,6 +522,9 @@ ul {
   border-radius: 4px;
 }
 .cls-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   cursor: pointer;
   top: 8px;
